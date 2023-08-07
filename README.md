@@ -43,7 +43,7 @@ WHERE: used to filter the results of a SELECT statement based on specified condi
 INNER JOIN combines rows from two or more tables based on a common column.
 LEFT/RIGHT/FULL JOIN: return all the rows from the left table and any rows from the right table that match them.
 
-![Screenshot of SQL Totorial]("/home/aws/reading-notes/Assests/Screenshot 2023-08-07 034115.png")
+![Screenshot of SQL Totorial]("/Assests/Screenshot 2023-08-07 034115.png")
 
 ## Code 102 - Intro to Software Development
 
