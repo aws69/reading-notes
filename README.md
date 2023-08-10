@@ -46,6 +46,43 @@ LEFT/RIGHT/FULL JOIN: return all the rows from the left table and any rows from 
 ![Screenshot of SQL Totorial](https://github.com/aws69/reading-notes/blob/main/Assests/Screenshot%202023-08-07%20034115.png?raw=true)
 
 ## Code 102 - Intro to Software Development
+### Clas 03
+int: int is a primitive data type in Java. It is a built-in type and represents a 32-bit signed integer value. Primitives are more memory-efficient and have better performance compared to objects.
+Integer: Integer is a class that is part of the Java standard library and belongs to the java.lang package. It's a wrapper class that provides methods to manipulate int values as objects. Since it's a class, it has some overhead in terms of memory usage and performance compared to the primitive int.
+
+int: The default value for an int is 0. If you declare an int variable without explicitly initializing it, it will automatically have the value 0.
+Integer: The default value for an Integer object (when not explicitly initialized) is null. Unlike primitive types, objects in Java are initialized to null by default.
+
+Autoboxing: Autoboxing is the process of automatically converting a primitive type to its corresponding wrapper class object. For example, when you assign an int value to an Integer reference, Java will automatically convert the int to an Integer object. This feature was introduced to simplify code and make it more convenient to work with both primitive types and their corresponding objects.
+Unboxing: Unboxing is the opposite process of autoboxing. It's the automatic conversion of a wrapper class object back to its corresponding primitive type. For example, if you have an Integer object and you assign it to an int variable, Java will automatically extract the int value from the Integer object.
+
+=========================================================================================================================
+
+The first kind of exception is the checked exception. These are exceptional conditions that a well-written application should anticipate and recover from. For example, suppose an application prompts a user for an input file name, then opens the file by passing the name to the constructor for java.io.FileReader. Normally, the user provides the name of an existing, readable file, so the construction of the FileReader object succeeds, and the execution of the application proceeds normally. But sometimes the user supplies the name of a nonexistent file, and the constructor throws java.io.FileNotFoundException. A well-written program will catch this exception and notify the user of the mistake, possibly prompting for a corrected file name.
+Checked exceptions are subject to the Catch or Specify Requirement. All exceptions are checked exceptions, except for those indicated by Error, RuntimeException, and their subclasses.
+
+The second kind of exception is the error. These are exceptional conditions that are external to the application, and that the application usually cannot anticipate or recover from. For example, suppose that an application successfully opens a file for input, but is unable to read the file because of a hardware or system malfunction. The unsuccessful read will throw java.io.IOError. An application might choose to catch this exception, in order to notify the user of the problem — but it also might make sense for the program to print a stack trace and exit.
+Errors are not subject to the Catch or Specify Requirement. Errors are those exceptions indicated by Error and its subclasses.
+
+The third kind of exception is the runtime exception. These are exceptional conditions that are internal to the application, and that the application usually cannot anticipate or recover from. These usually indicate programming bugs, such as logic errors or improper use of an API. For example, consider the application described previously that passes a file name to the constructor for FileReader. If a logic error causes a null to be passed to the constructor, the constructor will throw NullPointerException. The application can catch this exception, but it probably makes more sense to eliminate the bug that caused the exception to occur.
+Runtime exceptions are not subject to the Catch or Specify Requirement. Runtime exceptions are those indicated by RuntimeException and its subclasses.
+Errors and runtime exceptions are collectively known as unchecked exceptions.
+
+
+The try block contains the code that you suspect might throw an exception.
+
+The catch blocks follow the try block and are used to catch and handle specific types of exceptions. You can have multiple catch blocks to handle different types of exceptions that the code in the try block might throw.
+
+The finally block is optional. It contains code that will be executed regardless of whether an exception was thrown or caught. It's often used for cleanup operations that need to happen regardless of the exception's occurrence.
+
+
+==========================================================================================================================
+
+A situation where it would be useful to have a program that scans text is when you're building a text processing tool, such as a text editor, a search engine, a language translator, or a data extraction tool. These programs often need to interact with text data entered by users or obtained from external sources, and scanning the text allows you to analyze and manipulate it effectively.
+
+
+the Scanner class is commonly used to read input from various sources, such as the console or files. When you use a Scanner to read input, the input is broken down into tokens. The default delimiter for the Scanner class is whitespace, meaning it breaks the input into chunks separated by spaces, tabs, or newlines. You can customize the delimiter if needed.
+
 
 ## Code 201 - Foundations of Software Development
 
